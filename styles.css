@@ -1,0 +1,462 @@
+/* ------------------------------------------------- */
+/* ---------------------DEFAULT--------------------- */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/*  ------------------------------------------------------------  */
+/* ---------------------REUSEABLE COMPONENTS--------------------- */
+h1, h2, h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1{
+    font-size: 300%;
+    font-weight: 400;
+    word-spacing: 5;
+    color: white;
+    line-height: 130%;
+    margin-bottom: 30px;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: #e67e22;
+    padding: 15px 30px;
+    border-radius: 25px;
+    margin: 0 5px;
+    width: 190px;
+    display: inline-block;
+    text-align: center;
+    transition: all .3s;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #d35400;
+}
+
+h2{
+    color: #e67e22;
+    font-size: 180%;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2:after{
+    content: " ";
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: rgba(230, 126, 34, 0.5);
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.p-long{
+    text-align: center;
+    color: #265077;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 70%;
+    margin-left: 15%;
+    line-height: 140%; 
+}
+
+
+h3{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #265077;
+    color: white;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-bottom: 15px;
+}
+section{
+    padding: 50px;
+}
+
+.small-icon{
+    color: #4b78a1;
+    font-size: 130%;
+    margin-right: 10px;
+}
+/* ------------------------------------------------ */
+/* ---------------------HEADER--------------------- */
+
+header{
+    background-image: linear-gradient(45deg, rgba(27, 81, 126, 0.8) 55%, rgba(14, 35, 63, 0.9)), url("../img/fmeow_bg_edited.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh; /*view high*/
+}
+
+.logo{
+    width: 120px;
+    float: left;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-right: 50px;
+    margin-top: 55px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.main-nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 110%;
+    font-weight: 500;
+    transition: border-bottem 0.5s;
+    padding: 3px 0;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #cccccc;
+}
+
+
+.heading-main-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -55%);
+    width: 1140px;
+}
+
+/* ------------------------------------------------------- */
+/* ---------------------ABOUT SECTION--------------------- */
+.about-picture{
+    position: relative;
+    margin-top: 40px;
+}
+
+
+.about-picture img{
+    width: 90%;
+    border-radius: 25px;
+    border: 4px solid #cee0f0;
+    box-shadow: 0px 5px 10px 5px #265077;
+    transition: all 0.5s;
+    /* x, y, độ mờ, độ phóng rộng, màu */
+    /* filter: brightness(40%) blur(1px); */
+
+}
+
+.picture-title{
+    font-size: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #cde4f8;
+    transform: translate(-55%, 100%);
+    opacity: 0%;
+    transition: all 0.7s;
+}
+
+.about-picture:hover img,
+.about-picture:active img{
+    filter: brightness(50%) blur(1px);
+}
+
+.about-picture:hover .picture-title,
+.about-picture:active .picture-title{
+    transform: translate(-65%, -50%);
+    opacity: 1;
+}
+
+/* --------------------------------------------------------- */
+/* ---------------------PRODUCT SECTION--------------------- */
+
+.product-section{
+    background-color: #e7e0e0;
+}
+
+.product-section h2{
+    margin-bottom: 50px;
+}
+
+.product-box{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #eeefff;
+    box-shadow: 3px 5px 10px #e0e0e0;
+    width: 90%;
+    height: 350px;
+}
+
+.product-price{
+    color: #265077;
+    font-size: 110%;
+    font-weight: 500;
+    text-align: center;
+}
+
+.product-price span{
+    font-size: 80%;
+    font-weight: 150;
+}
+
+.product-box ul li{
+    margin-left: 20%;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.product-box .btn{
+    margin-left: 23%;
+    margin-top: 10%;
+}
+
+/* ------------------------------------------------------------- */
+/* ---------------------TESTIMONIAL SECTION--------------------- */
+
+.testimonials-section{
+    background-image: linear-gradient(45deg, rgba(2,33,64,0.8) 55%, rgba(45,95,93,0.85)), url(../img/background2.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.testimonials-section h2{
+    margin-bottom: 50px;
+}
+
+blockquote{
+    position: relative;
+    width: 95%;
+    font-size: 90%;
+    font-style: italic;
+    line-height: 140%;
+    color: white;
+    opacity: 90%;
+}
+
+blockquote::before{
+    font-size: 400%;
+    content: '\201C';
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -10px;
+}
+
+cite{
+    display: block;
+    color: #6684a0;
+    margin-top: 25px;
+}
+
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #265077;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* ---------------------------------------------------------- */
+/* ---------------------SPONSORS SECTION--------------------- */
+
+.sponsors-section{
+    background-color: #f4f4f4;
+}
+
+.sponsors-section h2{
+    margin-bottom: 50px;
+}
+
+.sponsors-showcase{
+    margin-left: 8%;
+}
+
+.sponsors-showcase li{
+    list-style: none;
+    float: left;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+figcaption{
+    color: #265077;
+    font-weight: 1000;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+.sponsors-section li{
+    list-style: none;
+    float: left;
+}
+
+.sponsors-showcase li .logo-sponsor:hover,
+.sponsors-showcase li .logo-sponsor:active{
+    transform: scale(1.1);
+}
+
+.logo-sponsor{
+    width: 140px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+/* --------------------------------------------------------- */
+/* ---------------------CONTACT SECTION--------------------- */
+.contact-section{
+    background-image: linear-gradient(45deg, rgba(2,33,64,0.8) 55%, rgba(45,95,93,0.85)), url(../img/background5.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.information{
+    list-style: none;
+    color: white;
+    line-height: 200%;
+    margin-top: 70px;
+    word-spacing: 1px;
+    font-size: 90%;
+}
+
+.information .small-icon{
+    color: #699bca;
+    transition: all .2s;
+}
+
+.information .small-icon:hover,
+.information .small-icon:active{
+    transform: scale(1.3);
+}
+
+.social-icons{
+    margin-top: 50px;
+    list-style: none;
+}
+
+.social-icons li{
+    display: inline-block;
+    font-size: 250%;
+    margin-left: 20px;
+    color: white;
+}
+
+.social-icons li i{
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.social-icons li i:hover,
+.social-icons li i:active{
+    transform: scale(1.3);
+    color: #e67e22;
+}
+
+/* ---------------------FORM--------------------- */
+form{
+    background-color: rgba(0,0,0,0.3);
+    margin-left: 40%;
+    width: 68%;
+    padding: 30px;
+}
+
+form .row{
+    margin-bottom: 20px;
+}
+
+label{
+    font-size: 125%;
+    color: white;
+}
+
+input, textarea{
+    outline: none;
+    padding: 10px;
+    background-color: rgba(31, 31, 31, 0.3);
+    border: 1px solid rgba(163, 160, 160, 0.8);
+    margin-left: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+textarea{
+    resize: none;
+    height: 100px;
+}
+
+input{
+    height: 50px;
+}
+
+form .row:last-child{
+    text-align: center;
+}
+
+input[type=submit]{
+    font-weight: 700;
+    font-size: 100%;
+    border-radius: 5px;
+    width: 60%;
+}
+
+input[type=text], input[type=email], textarea{
+    width: 80%;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus{
+    color: white;
+    background-color: rgba(31, 31, 31, 0.3);
+}
+
+
+/* ------------------------------------------------ */
+/* ---------------------FOOTER--------------------- */
+
+footer{
+    text-align: center;
+    background-color: #4d4c4c;
+    color: white;
+    padding: 20px;
+    font-weight: 250;
+}

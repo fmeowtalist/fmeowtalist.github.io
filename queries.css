@@ -1,0 +1,85 @@
+/* Big table to 1200px */
+@media only screen and (max-width:1200px){
+    html{
+        font-size: 16px;
+    }
+    .heading-main-box{
+        transform: translate(-35%, -50%);
+    }
+}
+
+/* Small tablet to big table from 768 to 1023 */
+@media only screen and (max-width: 1023px){
+    .logo{
+        width: 300px;
+        margin-left: 40px;
+    }
+    
+    .main-nav{
+        margin-right: 15px;
+        margin-top: 40px;
+    }
+    .main-nav li{
+        margin-right: 10px;
+    }
+    
+    .heading-main-box{
+        transform: translate(-25%, -50%);
+    }
+
+    .product-section .btn{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .product-box .small-icon{
+        margin-right: 5px;
+    }
+
+    .product-box{
+        width: 90%;
+    }
+
+    h3{
+        font-size: 90%;
+    }
+
+    .product-box ul li{
+        margin-left: 10%;
+    }
+
+    .social-icons li{
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+
+    .information i{
+        display: inline-block;
+    }
+
+    .information li{
+        font-size: 11px;
+    }
+}
+
+/* Small phones to small tablets */
+@media only screen and (max-width: 767px){
+    .col{
+        width: 100%;
+    }
+
+    .main-nav{
+        visibility: hidden;
+    }
+
+    .logo{
+        width: 350px;
+        margin-left: 10%;
+    }
+
+}
+
+/* Small phones from 0 to 480px */
+@media only screen and (max-width: 480px){
+
+}
